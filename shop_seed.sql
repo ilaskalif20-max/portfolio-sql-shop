@@ -7,7 +7,7 @@ INSERT INTO categories(category_id, name, parent_id) VALUES
 INSERT INTO products(product_id, category_id, name, price, is_active, created_at) VALUES
 (101,2,'SmartPhone X',699.00,1,'2025-06-01'),
 (102,2,'SmartPhone Lite',399.00,1,'2025-06-15'),
-(103,3,'Ultrabook 14"',1199.00,1,'2025-05-20'),
+(103,3,'Ultrabook 14',1199.00,1,'2025-05-20'),
 (104,4,'Наушники Pro',129.00,1,'2025-07-01'),
 (105,4,'Зарядка 30W',29.00,1,'2025-07-10');
 
@@ -73,4 +73,5 @@ INSERT INTO reviews(review_id, customer_id, product_id, rating, comment, created
 
 INSERT INTO shipments(shipment_id, order_id, carrier, tracking_no, shipped_at, delivered_at) VALUES
 (1,1002,'DHL','TRK1002','2025-07-22 15:00','2025-07-24 13:00'),
+
 (2,1004,'DPD','TRK1004','2025-08-02 10:00',NULL);
