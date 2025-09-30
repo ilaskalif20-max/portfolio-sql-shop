@@ -1,5 +1,3 @@
-PRAGMA foreign_keys = ON;
-
 CREATE TABLE categories (
     category_id     INTEGER PRIMARY KEY,
     name            TEXT NOT NULL,
@@ -105,3 +103,4 @@ CREATE INDEX idx_views_product ON product_views(product_id);
 CREATE INDEX idx_views_customer ON product_views(customer_id);
 CREATE INDEX idx_reviews_product ON reviews(product_id);
 CREATE INDEX idx_inventory_warehouse ON inventory(warehouse_id);
+
